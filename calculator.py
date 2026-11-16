@@ -5,7 +5,23 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-def add(a, b): 
-    pass
+import math
 
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if a == 0:
+        raise ZeroDivisionError("Divide by zero")
+    return b / a
+
+def logarithm(a, b):
+    return math.log(a, b)
 
