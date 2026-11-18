@@ -1,12 +1,4 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
-# First example
 import math
-
 def square_root(a):
     if a<0:
         raise ValueError("Square root of negative number")
@@ -30,7 +22,11 @@ def div(a, b):
     return b/a
 
 def logarithm(a, b):
-    return math.log(a, b)
+    if b <= 0:
+        raise ValueError
+    elif a ==1 or a<=0:
+        raise ValueError
+    return math.log(b, a)
 
 def exp(a, b):
     return a ** b
