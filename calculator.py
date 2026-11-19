@@ -1,3 +1,7 @@
+#https://github.com/AtalayAydogar/lab11-AA-JC
+# Partner 1: Atalay Aydogar
+# Partner 2: Jonathan Cunningham
+
 import math
 def square_root(a):
     if a<0:
